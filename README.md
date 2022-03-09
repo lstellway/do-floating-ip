@@ -14,5 +14,5 @@ This project has been sourced and tweaked from [5pi/img-do-float-ip](https://git
     -   Path to file containing mounted DigitalOcean [personal access token](https://docs.digitalocean.com/reference/api/create-personal-access-token/) secret
 -   `DO_FLOATING_IP`
     -   The DigitalOcean floating IP to keep up-to-date
--   `UPDATE_FREQUENCY` = `600` (`10` minutes)
-    -   The frequency (in seconds) for which to check that the floating IP is up-to-date
+-   `UPDATE_FREQUENCY` = `600` _(`10` minutes)_
+    -   The frequency _(in seconds)_ for which to check that the floating IP is up-to-date
