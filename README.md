@@ -16,3 +16,14 @@ This project has been sourced and tweaked from [5pi/img-do-float-ip](https://git
     -   The DigitalOcean floating IP to keep up-to-date
 -   `UPDATE_FREQUENCY` = `600` _(`10` minutes)_
     -   The frequency _(in seconds)_ for which to check that the floating IP is up-to-date
+
+## Running on Kubernetes
+
+Because [Kubernetes masks the "Link Local" IP range](https://kubernetes.io/docs/tasks/administer-cluster/ip-masq-agent/) required to run this container, the `hostNetwork` parameter needs to be enabled in the Pod specification:
+
+```yml
+apiVersion: v1
+kind: Pod
+spec:
+    hostNetwork: true
+```
