@@ -2,6 +2,12 @@
 
 This project has been sourced and tweaked from [5pi/img-do-float-ip](https://github.com/5pi/img-do-float-ip) _(thank you!)_.
 
+**Docker Pull Command**
+
+```sh
+docker pull lstellway/do-floating-ip
+```
+
 ## Environment Variables
 
 -   `DO_METADATA_API` = `http://169.254.169.254`
